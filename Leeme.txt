@@ -1,0 +1,36 @@
+Copyright (c) 2018, Borja Fernández Merchán
+
+Estos códigos corresponden a un chat de paso de mensajes por RMI en Java.
+Licenciado bajo la licencia GNU GPLv3.
+
+
+/************************/
+/*	Guía de uso	*/
+/************************/
+
+	0.- Recomendable siempre re-compilar los archivos en tu propia máquina.
+		0.1.- Las directivas "start" y "&" son tan solo para ejecutar los programas en terminales nuevas, por comodidad de uso; no son necesarias para el correcto funcionamiento del software.
+
+	1.- Lanzar los registros rmi:
+		1.1.- En windows: "start rmiregistry" para lanzarlos en una consola con un proceso separado.
+		1.2.- En sistemas unix: "rmiregistry &" para lanzarlos en una terminal distinta en un proceso nuevo.
+
+	2.- Lanzar el servidor:
+		2.1.- En windows: "start java ./rmichat/RMIChat + [dirección[:puerto]]" si vas a hostearlo en tu propio ordenador usar "localhost".
+		2.2.- En sistemas unix: "java ./rmichat/RMIChat + [dirección[:puerto]] &" ídem.
+
+	3.- Ejecutar los clientes; por cada cliente nuevo que vayas a ejecutar, sigue el mismo procedimiento:
+		3.1.- En windows: "start java ./rmichat/Cliente + [direcciónServidor[:puertoServidor]]"
+		3.2.- En sistemas unix: "java ./rmichat/Cliente + [direcciónServidor[:puertoServidor]] &"
+
+	4.- Para terminar la espera de input del usuario, escriba "salir".
+
+/************************/
+/*	Notas		*/
+/************************/
+
+	-Esta versión no incluye métodos de cierre de las conexiones, son terminadas matando los procesos de cliente y servidor.
+	-El autor no se hace responsable del uso que le de Ud. al software, ni de las consecuencias derivadas de su uso.
+	-Por su propia seguridad, y siempre que le sea posible, revise el código que descargue de terceros antes de ejecutarlo.
+	-Este código se comparte con fines educativos e ilustrativos, carece de fines comerciales ni lucrativos.
+	-Cualquiera es libre de aportar al código mediante el github de donde se puede obtener. Si lo has obtenido de terceros, visita (https://github.com/ProgrammingKiddo/RMIChat) para comprobar que tienes la última versión disponible.
